@@ -1,8 +1,7 @@
-#!/bin/bash/
+#!/bin/bash
 
-cDate=`date+'%d'`
+cDate=$(date+'%d')
 
-if [$(cDate%2) -eq 0]
-then
-echo "Even Day"
+if [ $((cDate%2)) -eq 0 ];then
+    echo "Even Day"
 fi
