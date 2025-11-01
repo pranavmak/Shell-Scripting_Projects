@@ -15,7 +15,7 @@ maskify() {
 
 # Test cases
 test_cases() {
-    echo "Running tests..."
+    echo "Test is Running....."
 
     local result
 
