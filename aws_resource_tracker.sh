@@ -3,8 +3,8 @@
 ######################################################
 #
 # Author: Pranav
-# Date : 7th june
-# Version : 1.0
+# Date : 7th june 2025
+# Version : 1.1
 # Desc: Reporting the AWS resource usage to dashboard
 #
 #####################################################
@@ -17,12 +17,12 @@ set -x
 # AWS Lambda
 
 # Listing S3 buckets
-echo "List of s3 buckets"
+echo "List the s3 buckets"
 aws s3 ls > resourceTracker
 
 
 # Listing EC2 instances
-echo "List of ec2 instances"
+echo "List the ec2 instances"
 aws ec2 describe-instances | jq '.Reservations[].Instances.[].InstanceID'
 
 
